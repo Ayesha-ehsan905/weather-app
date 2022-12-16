@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { OptionsOrGroups, GroupBase } from "react-select";
 import { AsyncPaginate, Response } from "react-select-async-paginate";
 import { geoApiOptions, GEO_API_URL } from "../../api/api";
 
