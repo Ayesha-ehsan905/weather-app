@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CurrentWeather from "./components/currentWeather/CurrentWeather";
 import Search from "./components/search/Search";
 import { Container } from "./style/style";
 
@@ -10,8 +11,9 @@ function App() {
   };
   return (
     <>
-      <Container>
+      <Container className="container">
         <Search onSearchChange={handleOnSearchChange} />
+        <CurrentWeather />
       </Container>
     </>
   );

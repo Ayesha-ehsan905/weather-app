@@ -2,7 +2,6 @@ import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { geoApiOptions, GEO_API_URL } from "../../api/api";
 import { IWeather } from "../../utilis/Interfaces";
-import type { GroupBase } from "react-select";
 
 const Search = ({ onSearchChange }: IWeather) => {
   const [search, setSearch] = useState(null);
