@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { AsyncPaginate, Response } from "react-select-async-paginate";
+import { AsyncPaginate } from "react-select-async-paginate";
 import { geoApiOptions, GEO_API_URL } from "../../api/api";
+import { IWeather } from "../../utilis/Interfaces";
+import type { GroupBase } from "react-select";
 
-const Search = ({ onSearchChange }) => {
+const Search = ({ onSearchChange }: IWeather) => {
   const [search, setSearch] = useState(null);
 
   const loadOptions = (inputValue) => {
@@ -32,13 +34,14 @@ const Search = ({ onSearchChange }) => {
   };
   return (
     <>
-      <AsyncPaginate
+      {/* <AsyncPaginate
         placeholder="Search for city"
         debounceTimeout={600}
         value={search}
         onChange={handleOnChange}
         loadOptions={loadOptions}
-      />
+      /> */}
+      <AsyncPaginate />
     </>
   );
 };
